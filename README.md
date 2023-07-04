@@ -53,4 +53,4 @@
   <p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>
   
   <h2>Contact</h2>
-  <p>If you have any questions or suggestions, please feel free to contact the project maintainer at your-email@example.com.</p>
+  <p>If you have any questions or suggestions, please feel free to contact us</p>
