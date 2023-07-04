@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="bootstrap-4.5.0-dist/css/bootstrap.min.css" rel="stylesheet">
+ <script src="jquery-3.5.1.min.js"></script>
+  <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <style>
+   
+        .navbar{
+            background-color: #fcfeff;
+            
+            
+        }
+  .navbar-brand{
+    padding-left: 20px;
+    
+  }
+
+
+.carousel-inner img {
+    width: 1600px;
+    height: 700px;
+  }
+  .cardh{
+    padding-left: 430px;
+  }
+  .card{
+    border-radius: 4px;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  
+  cursor: pointer;
+}
+
+.card:hover{
+     transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+.famous{
+  background-color: white;
+  background-size: 100%;
+  
+}
+.f1{
+  text-align: center;
+}
+.f2{
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+}
+.f3{
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+}
+.f4{
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+}
+.f5{
+  text-align: center;
+}
+.f6{
+  text-align: center;
+}
+
+.para{
+  background-color: rgb(173, 167, 167);
+}
+
+.aaaa{
+    background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+    text-align: center;
+    color: black;
+    transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+   color: black;
+  font-weight: bold;
+  border: 3px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+}
+  .aaaa a{
+    color: white;
+  }
+  .aaaa a:hover{
+    color: rgb(14, 13, 13);
+  }
+  .ccc{
+    background-color: rgb(194, 223, 236);
+  }
+  .x1{
+    font-size: xx-large;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 150px;
+    padding-top: 70px;
+    color: chocolate;
+  }
+  .x2{
+    font-size: larger;
+    font-weight: 400;
+    padding-left: 150px;
+    color: black;
+  }
+  #x3{
+    margin-left: 200px;
+  }
+  #x4{
+    margin-left: 150px;
+  }
+  .btn1{
+    background-color: rgba(136, 220, 236, 0.801); 
+  color: black; 
+  border: 2px solid chocolate;
+margin-left: 150px;
+border-radius: 20px;
+
+  }
+  .btn1:hover{
+    color: rgb(255, 255, 255);
+    background-color: chocolate;
+  }
+  #logy{
+    margin-left: 550px;
+  }
+
+  .btn6{
+    background-color: rgba(136, 220, 236, 0.801); 
+  color: black; 
+  border: 2px solid chocolate;
+margin-left: 500px;
+border-radius: 20px;
+
+  }
+
+  .dropdown-menu{
+	margin-left: 500px;
+	background-color: rgba(136, 220, 236, 0.801); 
+  color: black; 
+  border: 2px solid chocolate;
+  border-radius: 20px;
+  }
+
+  .carousel-inner img {
+    width: 1500px;
+    height: 400px;
+  }
+
+  .carousel {
+	margin: 40px auto 60px;
+	padding: 0 80px;
+}
+.carousel .carousel-item {
+	text-align: center;
+	overflow: hidden;
+}
+.carousel .carousel-item h4 {
+	font-family: 'Varela Round', sans-serif;
+}
+.carousel .carousel-item img {
+	max-width: 100%;
+	display: inline-block;
+}
+.carousel .carousel-item .btn {
+	border-radius: 20;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: none;
+	background: #a177ff;
+	padding: 6px 15px;
+	margin-top: 5px;
+}
+.carousel .carousel-item .btn:hover {
+	background: #8c5bff;
+}
+.carousel .carousel-item .btn i {
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.carousel .thumb-wrapper {
+	margin: 5px;
+	text-align: left;
+	background: #fff;
+	box-shadow: 3px 5px 5px rgba(0,0,0,0.1);   
+}
+.carousel .thumb-content {
+	padding: 15px;
+	font-size: 13px;
+}
+.carousel-control-prev, .carousel-control-next {
+	height: 44px;
+	width: 44px;
+	background: none;	
+	margin: auto 0;
+	border-radius: 50%;
+	border: 3px solid rgba(0, 0, 0, 0.8);
+}
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 36px;
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	margin: -19px 0 0 0;
+	z-index: 5;
+	left: 0;
+	right: 0;
+	color: rgba(0, 0, 0, 0.8);
+	text-shadow: none;
+	font-weight: bold;
+}
+.carousel-control-prev i {
+	margin-left: -3px;
+}
+.carousel-control-next i {
+	margin-right: -3px;
+}
+.carousel-indicators {
+	bottom: -50px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin: 4px;
+	border: none;
+}
+.carousel-indicators li {	
+	background: #ababab;
+}
+.carousel-indicators li.active {	
+	background: #555;
+}
+.active {
+  background-color: #c6bfbf;
+ 
+}
+       </style>
+</head>
+  <body>
+   
+
+
+      <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top py-3 shadow-lg p-3 mb-5 bg-black rounded">
+            <a class="navbar-brand" href="index.html"> 
+    
+                <img src="logo1.png" width="120" height="55" onclick=""> </a>
+            </a> 
+              
+               <div class="navvv">
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase "> <span class="sr-only">(current)</span></a> </li>
+                        <li class="nav-item"><a href="index.html" class="nav-link text-dark text-uppercase" style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;"> HOME </a></li>
+                        <li class="nav-item"><a href="aboutus.html" class="nav-link text-dark text-uppercase" style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;margin-left: 10px;"> ABOUTUS </a></li>
+                        <li class="nav-item"><a href="H:\Eidelweiss_hackathon\src\App.js" class="nav-link text-dark text-uppercase" style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;margin-left: 10px;">OPTION CHAIN </a></li>
+                        <li class="nav-item"><a href="learn.html" class="nav-link text-dark text-uppercase" style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;margin-left: 10px;">LEARN </a></li>
+   
+    </li>
+                </div>
+                </div>
+           
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+     
+      <br>
+      <br>
+      <br>
+    
+      <br>
+      
+          
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+          
+           
+          </ul>
+          
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="stock2.jpeg"  width="700" height="400">
+            </div>
+            <div class="carousel-item">
+              <img src="stock1.jpeg"  width="600px" height="700">
+            </div>
+            <div class="carousel-item">
+              <img src="stock3.jpeg" width="1500px" height="700">
+            </div>
+            <div class="carousel-item">
+              <img src="stock4.jpeg" width="1500px" height="700">
+            </div>
+            
+          
+          </div>
+          
+          <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev" style="margin-left: 10px;">
+            <i class="fa fa-angle-left"></i>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+          </a>
+
+        </div>
+
+        <div class="container mt-5 mb-3">
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="card p-3 mb-2">
+                      <div class="d-flex justify-content-between">
+                          <div class="d-flex flex-row align-items-center">
+                              <div class="icon"> <i class="bx bxl-mailchimp"></i> </div>
+                              <div class="ms-2 c-details">
+                                  <h6 class="mb-0">30 JUNE </h6> <span>2023</span>
+                              </div>
+                          </div>
+                         
+                      </div>
+                      <div class="mt-5">
+                          <p class="heading">Upstreaming of clients' funds by Stock Brokers (SBs) / Clearing Members (CMs) to Clearing Corporations (CCs) Segregation and Monitoring of Collateral at Client Level </p>
+                          <div class="mt-5">
+                              <!-- <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div> -->
+                              <div class="mt-3"> <span class="text1"><span class="text2">NCL/DS/57401</span></span> </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card p-3 mb-2">
+                      <div class="d-flex justify-content-between">
+                          <div class="d-flex flex-row align-items-center">
+                              <div class="icon"> <i class="bx bxl-dribbble"></i> </div>
+                              <div class="ms-2 c-details">
+                                  <h6 class="mb-0">30 JUNE</h6> <span>2023</span>
+                              </div>
+                          </div>
+                         
+                      </div>
+                      <div class="mt-5">
+                          <p class="heading">Upstreaming of clients' funds by Stock Brokers (SBs) / Clearing Members (CMs) to Clearing Corporations (CCs) Segregation and Monitoring of Collateral at Client Level </p>
+                          <div class="mt-5">
+                              
+                              <div class="mt-3"> <span class="text1"><span class="text2">NCL/CMPT/57400</span></span> </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card p-3 mb-2">
+                      <div class="d-flex justify-content-between">
+                          <div class="d-flex flex-row align-items-center">
+                              <div class="icon"> <i class="bx bxl-reddit"></i> </div>
+                              <div class="ms-2 c-details">
+                                  <h6 class="mb-0">30 JUNE</h6> <span>2023</span>
+                              </div>
+                          </div>
+                          
+                      </div>
+                      <div class="mt-5">
+                          <p class="heading">Upstreaming of clients' funds by Stock Brokers (SBs) / Clearing Members (CMs) to Clearing Corporations (CCs) Segregation and Monitoring of Collateral at Client Level </p>
+                          <div class="mt-5">
+                             
+                              <div class="mt-3"> <span class="text1"><span class="text2">NCL/CD/57399</span></span> </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+        </div>
+
+
+  </div>
+<br><br>
+
+
+       <div class="ccc">
+
+        <br><br><br>
+          <div class="row">
+            <div class="column">
+
+              <img src="stock5.png" id="x3" height="500px" width="600px">
+
+            </div>
+           <div class="column">
+
+            <p class="x1">TCC
+            <br>  Stock Exchange</p>
+            <i class="	fa fa-forward" id="x4" style="font-size:20px;color: rgba(6, 9, 9, 0.801)"></i> <i class="	fa fa-forward" style="font-size:20px;color:  rgba(6, 9, 9, 0.801)"></i> <i class="	fa fa-forward" style="font-size:20px;color: rgba(6, 9, 9, 0.801)"></i><br><br>
+          
+              <br>
+              <a href="#" class="btn btn1" role="button">Learn More</a>
+        
+              
+           </div>
+            
+          </div>
+          <br><br><br>
+        </div>
+    
+    
+<!-- start -->
+<div>
+	<div class="row">
+		<div class="col-md-10 mx-auto">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+			<!-- Carousel indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>   
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="caro1.png" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<a href="#" class="btn btn-primary">Learn More<i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="caro2.png" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<a href="#" class="btn btn-primary">Learn More<i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>
+						</div>				
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="caro3.png" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<a href="#" class="btn btn-primary">Learn More<i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>					
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="caro4.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<a href="#" class="btn btn-primary">Learn More<i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="caro5.png"img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<a href="#" class="btn btn-primary">Learn More<i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="caro6.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<a href="#" class="btn btn-primary">Learn More<i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>					
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="stock2.jpeg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<a href="#" class="btn btn-primary">Learn More<i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- end -->
+
+        
+        <div class="footer">
+    
+
+<div class=para>
+<div class="container">
+  <br>
+<br>
+
+<p class="f2" style="color: #000000;">"The secret recipe for success in stock market is simple. 30% in market anaylsis skills, 30% in risk management, 30% in emotion control, and 10% in luck."- Benjamin Lee
+<p class="f3" style="color: #000000;">"The stock market is designed to transfer money from the active to the patient."- Warren Buffett</p>
+
+
+
+<br>
+<br>
+</div>
+</div>
+
+
+
+
+
+
+<div class="footer">
+    
+     <br>
+     <br> 
+    
+  <h3 class="text-center d-block">Find me on social media</h3>
+  <div class="row social-links">
+    <ul class="nav mx-auto">
+      <li class="nav-item"> <a class="nav-link" href="#"><i class="	fa fa-pinterest" style="font-size:30px;color: rgb(247, 38, 38)"></i>
+          </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#"><i class="	fa fa-twitter" style="font-size:30px"></i>
+          </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#"><i class="	fa fa-facebook-square"  style="font-size:30px"></i>
+          </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#"><i class="fa fa-instagram" id="insta" aria-hidden="true" style="font-size:30px;color: rgb(231, 35, 100);"></i>
+          </a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#"><i class="	fa fa-youtube" style="font-size:30px;color: red;"></i>
+          </a> 
+        
+          <br>
+          <br>
+        
+        </li>
+
+
+    </ul>
+  </div>
+
+</div>  
+
+
+      
+    </div>  
+
+    <script>
+      var currentPage = window.location.href;
+
+// Get the navigation links
+var navLinks = document.querySelectorAll('nav ul li a');
+
+// Loop through the links and check if the URL matches the current page
+navLinks.forEach(function(link) {
+  if (link.href === currentPage) {
+    // Apply the active class to the matching link
+    link.classList.add('active');
+  }
+});
+    </script>
+     
+  </body>
+  </html>

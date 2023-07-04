@@ -1,0 +1,107 @@
+
+
+body {
+  font-size: 16px;
+  font-family: "PT-Sans-Regular"; }
+
+.card {
+  border: none;
+  background: none;
+  border-radius: 0; }
+ 
+
+
+
+.fh5co-recent-work {
+  background: linear-gradient(#100d0e, white);
+  padding: 100px 0; }
+  @media (max-width: 767px) {         
+    .fh5co-recent-work {
+      padding-bottom: 0; } }
+
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0; } 
+
+
+
+        @media (max-width: 768px) {
+          .carousel-inner .carousel-item > div {
+              display: none;
+          }
+          .carousel-inner .carousel-item > div:first-child {
+              display: block;
+          }
+      }
+      
+    .al{
+      text-align: center;
+      color:rgb(21, 57, 57);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+
+.fh5co-portfolio {
+  background-color: #f2d5d7;
+  background-image: url(Images/abc2.jpg);
+background-size: 1450px;
+  background-repeat: no-repeat;
+  padding: 150px 0;
+  margin-top: 0; }
+
+
+  
+
+  .fh5co-portfolio .bx {
+    float: left;
+    padding: 7px; }
+
+      
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+}
+    
+        #browsers{
+            background-color: cadetblue
+        }
+        .dropdown-menu {
+            background: linear-gradient(#050008,#70949a);
+        }
+        .dropdown-menu a{
+            color: aliceblue;
+            text-align: center;
+        }
+        .dropdown-header{
+       color:floralwhite;
+            font-size: 18px;
+            font-family: monospace;
+            text-align: center
+        }
+        #dropdown1{
+            background: linear-gradient(#d5c8b7,#f1b304);
+            color:black
+            
+        }
+        #dropdown1 a{
+            color: darkslategray;
+        }
+        .dropdown-menu-center {
+    right: auto;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+        .fa-facebook-square {
+  color: #3b5998;
+  background-image: linear-gradient( to bottom, transparent 20%, white 20%, white 93%, transparent 93% );
+  background-size: 55%;
+  background-position: 70% 0;
+  background-repeat: no-repeat;
+}
+ 
